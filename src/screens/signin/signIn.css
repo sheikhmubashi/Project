@@ -1,4 +1,4 @@
-/* * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
     display: flex;
 }
 .redPageDiv {
-    width: 40%;
+    width: 50%;
     height: 100%;
     background-color: #7F1D1E;
     color: white;
@@ -18,6 +18,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("../../images/groupImages.png");
+    background-repeat: round;
 }
 h3 > span {
     font-size: xx-large;
@@ -61,13 +63,14 @@ h3 > span {
 .mainText {
     width: 71%;
     height: 25%;
+    
 }
 .dotDiv {
     width: 90%;
     margin-bottom: 30px;
 }
 .signUpPage {
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -110,6 +113,9 @@ h3 > span {
     font-weight: bold;
     font-size: large;
 }
+.forgot {
+    text-align: right;
+}
 @media screen and (max-width: 1024px){
     .mainText {
         width: 92%;
@@ -125,4 +131,4 @@ h3 > span {
     .com_Img {
         height: 140px
     }
-} */
+}

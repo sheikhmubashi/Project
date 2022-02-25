@@ -1,19 +1,18 @@
-import './signUp.css'
+import './signIn.css'
 import computerImage from '../../images/computer_image.png'
 import arrow from '../../images/arrow.png'
 import printer from '../../images/printer.png'
 import dotImage from '../../images/dotImage.png'
 import {Link} from "react-router-dom"
 
-
-function SignUp() {
+function SignIn() {
   return (
     <div className="mainDiv">
       <div className="redPageDiv">
         <div className='mainText'>
           <h3>CUSTOM <span>POINT</span> AND <span>CLICK</span> LINEUP CARDS THAT YOU CAN <span>PRINT</span> FROM YOUR <span>COMPUTER</span></h3>
         </div>
-        <div className='imagesDiv'>
+        {/* <div className='imagesDiv'>
           <div className='com_Img'>
             <img src={computerImage} alt="computer image" />
           </div>
@@ -28,27 +27,26 @@ function SignUp() {
         </div>
         <div className='dotDiv'>
           <img src={dotImage} alt="dot image" />
-        </div>
+        </div> */}
       </div>
       <div className="signUpPage">
-        <div classNa             me='signUpMain'>
-          <h1>Sign Up</h1>
+        <div className='signUpMain'>
+          <h1>Sign In</h1>
           <p>Need a custom lineup card programs? <Link to='/signup'>Sign-up/</Link><Link to='/signin'>Sign-in now.</Link>
             We are ready to serve you.</p>
           <form>
-            <label>Full Name</label>
-            <input />
             <label>Email Address</label>
-            <input />
+            <input type='email'/>
             <label>Password</label>
-            <input />
-            <button>SIGN UP</button>
+            <input type='password'/>
+            <label className='forgot'>Forgot Password?</label>
+            <button>SIGN IN</button>
           </form>
-          <p>Already have an account <Link to='/signin'>Sign In</Link></p>
+          <p>Already have an account <Link to='/signup'>Sign Up</Link></p>
         </div>
       </div>
     </div>
   )
 }
 
-export default SignUp
+export default SignIn;
