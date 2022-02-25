@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainDiv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.redPageDiv {
+    width: 40%;
+    height: 100%;
+    background-color: #7F1D1E;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3 > span {
+    font-size: xx-large;
+}
+.imagesDiv {
+    display: flex;
+}
+.printerDivMain {
+    width: 45%;
+    display: flex;
+    justify-content: end;
+}
+.printerDiv {
+    border-radius: 125px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(170, 98, 98);
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.com_Img {
+    border-radius: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(170, 98, 98);
+    opacity: 0.5;
+
+}
+.com_Img > img {
+    width: 70%;
+    height: 70%;
+}
+.mainText {
+    width: 50%;
+    height: 25%;
+}
+.dotDiv {
+    width: 90%;
+    margin-bottom: 30px;
+}
+.signUpPage {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signUpMain {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.signUpMain > p {
+    width: 65%;
+}
+.signUpMain > p > span {
+    color: red;
+}
+.signUpMain > form {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-evenly;
+}
+.signUpMain > form > label {
+    font-size: 20px;
+    
+}
+.signUpMain > form > input {
+    height: 15%;
+    background-color: #e7e4e4;
+    border: none;
+}
+.signUpMain > form > button {
+    height: 15%;
+    background-image: url('../../images//sihnupButton.png');
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: large;
+}
+@media screen and (max-width: 1024px){
+    .mainText {
+        width: 92%;
+    }
+    .redPageDiv {
+        justify-content: space-evenly;
+    }
+    .imagesDiv {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1024px){ 
+    .com_Img {
+        height: 140px
+    }
+}
