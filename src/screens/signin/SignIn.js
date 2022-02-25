@@ -3,15 +3,13 @@ import computerImage from '../../images/computer_image.png'
 import arrow from '../../images/arrow.png'
 import printer from '../../images/printer.png'
 import dotImage from '../../images/dotImage.png'
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function SignIn() {
   return (
     <div className="mainDiv">
       <div className="redPageDiv">
-        <div className='mainText'>
-          <h3>CUSTOM <span>POINT</span> AND <span>CLICK</span> LINEUP CARDS THAT YOU CAN <span>PRINT</span> FROM YOUR <span>COMPUTER</span></h3>
-        </div>
+        <h3>CUSTOM <span>POINT</span> AND <span>CLICK</span> LINEUP CARDS THAT YOU CAN <span>PRINT</span> FROM YOUR <span>COMPUTER</span></h3>
         {/* <div className='imagesDiv'>
           <div className='com_Img'>
             <img src={computerImage} alt="computer image" />
@@ -36,13 +34,13 @@ function SignIn() {
             We are ready to serve you.</p>
           <form>
             <label>Email Address</label>
-            <input type='email'/>
+            <input type='email' />
             <label>Password</label>
-            <input type='password'/>
+            <input type='password' />
             <label className='forgot'>Forgot Password?</label>
             <button>SIGN IN</button>
           </form>
-          <p>Already have an account <Link to='/signup'>Sign Up</Link></p>
+          <p>Already have an account <Link to='/signup'>Sign In</Link></p>
         </div>
       </div>
     </div>

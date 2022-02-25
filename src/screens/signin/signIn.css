@@ -10,19 +10,22 @@
     display: flex;
 }
 .redPageDiv {
-    width: 50%;
+    width: 40%;
     height: 100%;
     background-color: #7F1D1E;
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-image: url("../../images/groupImages.png");
-    background-repeat: round;
+    background-size: contain;
 }
 h3 > span {
-    font-size: xx-large;
+    font-size: 6vh;
+}
+h3 {
+    width: 80%;
+    margin-top: 20%;
+    font-size: 3vh;
 }
 .imagesDiv {
     display: flex;
@@ -61,16 +64,16 @@ h3 > span {
     height: 70%;
 }
 .mainText {
-    width: 71%;
-    height: 25%;
-    
+    width: 70%;
+    font-size: 20px;
+    margin-top: 20vh;
 }
 .dotDiv {
     width: 90%;
     margin-bottom: 30px;
 }
 .signUpPage {
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -108,27 +111,21 @@ h3 > span {
 .signUpMain > form > button {
     height: 15%;
     background-image: url('../../images//sihnupButton.png');
+    background-repeat: round;
     color: white;
     margin-top: 20px;
     font-weight: bold;
     font-size: large;
+    border: none;
 }
 .forgot {
     text-align: right;
 }
 @media screen and (max-width: 1024px){
-    .mainText {
-        width: 92%;
-    }
     .redPageDiv {
-        justify-content: space-evenly;
+        display: none;
     }
-    .imagesDiv {
-        width: 90%;
-    }
-}
-@media screen and (max-width: 1024px){ 
-    .com_Img {
-        height: 140px
+    .signUpPage {
+        width: 100%;
     }
 }
